@@ -39,6 +39,18 @@ def full?(board)
 
   if movesMade == 9
     return true
+  else
+    return false
+  end
+
+end
+
+def draw?(board)
+
+  if full?(board)
+    return true
+  else
+    return false
   end
 
 end
@@ -73,7 +85,7 @@ def won?(board)
 
   end
 
-  confirmedWin == full?(board) #true for draw
+  confirmedWin == draw?(board) #true for draw
 
   return confirmedWin
 
