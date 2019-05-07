@@ -127,3 +127,7 @@ def won?(board)
   return confirmedWin
 
 end
+
+def winner(board)
+
+end
