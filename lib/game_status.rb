@@ -22,6 +22,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   howManyMoves = 0
+
   board.each do |space|
     if space != "" || space != " " || space != nil
       howManyMoves += 1
@@ -30,17 +31,16 @@ def won?(board)
 
   if howManyMoves == 0
     return false
-  end
+  else
+    WIN_COMBINATIONS.each do |combo|
 
-  WIN_COMBINATIONS.each do |combo|
+      confirmedWin = combo.all? do |index|
+        board[index] == "X"
+      end || combo.all? do |index|
+        board[index] == "O"
+      end
 
-    confirmedWin = combo.all? do |index|
-      board[index] == "X"
-    end || combo.all? do |index|
-      board[index] == "O"
     end
-
-  end
 
 
 end
