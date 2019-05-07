@@ -40,7 +40,7 @@ def won?(board)
 
     WIN_COMBINATIONS.each do |array|
       confirmedWin = board.all? |space2|
-      space == "X"
+      space2 == "X"
       if confirmedWin == true
         break
       end
