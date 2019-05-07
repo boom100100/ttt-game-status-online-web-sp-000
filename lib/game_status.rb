@@ -30,4 +30,3 @@ def won?(board)
   if howManyMoves > 0
     return false
 end
-
