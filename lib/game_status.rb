@@ -54,7 +54,7 @@ def draw?(board)
     end
 
     if confirmedWin == true
-      return confirmedWin
+      return !confirmedWin
     end
 
     confirmedWin = array.all? do |index|
@@ -62,7 +62,7 @@ def draw?(board)
     end
 
     if confirmedWin == true
-      return confirmedWin
+      return !confirmedWin
     end
 
   end
