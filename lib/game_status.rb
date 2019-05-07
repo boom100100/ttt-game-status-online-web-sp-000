@@ -17,3 +17,17 @@ WIN_COMBINATIONS = [
   [0,4,8], #top left bottom right diagonal
   [2,4,6], #top right bottol left diagonal
 ]
+
+
+
+def won?(board)
+  howManyMoves = 0
+  board.each do |space|
+    if space != "" || space != " " || space != nil
+      howManyMoves += 1
+    end
+  end
+  if howManyMoves > 0
+    return false
+end
+
