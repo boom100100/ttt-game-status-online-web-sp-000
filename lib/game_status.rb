@@ -51,7 +51,7 @@ def won?(board)
     confirmedWin = board.all? do |space2|
       space2 == "O"
     end
-    
+
     if confirmedWin == true
       break
     end
