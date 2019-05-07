@@ -39,8 +39,8 @@ def won?(board)
       end || combo.all? do |index|
         board[index] == "O"
       end
-
     end
+  end
 
 
 end
