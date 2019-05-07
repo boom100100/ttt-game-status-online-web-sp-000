@@ -50,7 +50,7 @@ def won?(board)
       if confirmedWin == true
         break winComparison
       end
-      
+
       return confirmedWin
 
     end
