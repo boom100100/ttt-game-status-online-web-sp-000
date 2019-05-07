@@ -130,4 +130,23 @@ end
 
 def winner(board)
 
+  WIN_COMBINATIONS.each do |array|
+
+    confirmedWin = array.all? do |index|
+      board[index] == "X"
+    end
+
+    if confirmedWin == true
+      return "X"
+    end
+
+    confirmedWin = array.all? do |index|
+      board[index] == "O"
+    end
+
+    if confirmedWin == true
+      return "O"
+    end
+
+  end
 end
