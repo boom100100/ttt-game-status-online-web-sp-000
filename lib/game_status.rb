@@ -66,9 +66,11 @@ def won?(board)
 end
 
 def full?(board, movesMade)
+
   if movesMade == 9
     return true
   else
     return false
-
+  end
+  
 end
