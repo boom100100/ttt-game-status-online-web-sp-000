@@ -33,7 +33,7 @@ def won?(board)
   end
 
   if howManyMoves == 0
-    return false
+    return confirmedWin
 
   else
     WIN_COMBINATIONS.each do |combo|
