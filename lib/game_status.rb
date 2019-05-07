@@ -41,13 +41,13 @@ def won?(board)
       confirmedWin = board.all? |space2|
       space2 == "X"
       if confirmedWin == true
-        break winComparison
+        break
       end
 
       confirmedWin = board.all? |space2|
       space2 == "O"
       if confirmedWin == true
-        break winComparison
+        break 
       end
 
       return confirmedWin
