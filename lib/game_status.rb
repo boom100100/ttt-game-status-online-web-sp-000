@@ -49,6 +49,7 @@ def won?(board)
     if confirmedWin == true
       break
     end
+  end
 
     return confirmedWin
 
