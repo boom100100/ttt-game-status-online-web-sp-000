@@ -41,11 +41,11 @@ def won?(board)
     winningRow = []
     confirmedWin = board.all? do |space2|
       space2 == "X"
-      winningRow.push(board.index(space2))
+
     end
 
     if confirmedWin == true
-      return winningRow
+      return array
     end
 
     confirmedWin = board.all? do |space2|
