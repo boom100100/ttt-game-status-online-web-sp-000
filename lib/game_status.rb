@@ -36,6 +36,8 @@ def won?(board)
     return confirmedWin
 
   else
+
+    =begin
     WIN_COMBINATIONS.each do |combo|
 
       confirmedWin = combo.all? do |index|
@@ -49,6 +51,7 @@ def won?(board)
         end
       end
     end
+    =end
   end
 
 
