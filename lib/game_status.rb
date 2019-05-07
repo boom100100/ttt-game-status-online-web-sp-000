@@ -47,10 +47,24 @@ end
 
 def draw?(board)
 
-  if full?(board)
-    return true
-  else
-    return false
+  WIN_COMBINATIONS.each do |array|
+
+    confirmedWin = array.all? do |index|
+      board[index] == "X"
+    end
+
+    if confirmedWin == true
+      return confirmedWin
+    end
+
+    confirmedWin = array.all? do |index|
+      board[index] == "O"
+    end
+
+    if confirmedWin == true
+      return confirmedWin
+    end
+
   end
 
 end
