@@ -53,7 +53,7 @@ def won?(board)
     end
 
     if confirmedWin == true
-      return winningRow
+      return array
     end
   end
 
