@@ -38,23 +38,23 @@ def won?(board)
   end
 
   WIN_COMBINATIONS.each do |array|
-    winningRow = []
-    confirmedWin = board.all? do |space2|
-      space2 == "X"
 
+    confirmedWin = array.all? do |index|
+      board[index] == "X"
     end
 
     if confirmedWin == true
       return array
     end
 
-    confirmedWin = board.all? do |space2|
-      space2 == "O"
+    confirmedWin = array.all? do |index|
+      board[index] == "O"
     end
 
     if confirmedWin == true
       return array
     end
+
   end
 
     return confirmedWin
