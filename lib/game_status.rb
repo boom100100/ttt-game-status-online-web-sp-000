@@ -32,13 +32,15 @@ def won?(board)
 
   end
 
-  if howManyMoves == 0
+  if howManyMoves == 0 #game not over at 0 moves
     return confirmedWin
-    
+
   end
 
 
-    WIN_COMBINATIONS
+    WIN_COMBINATIONS.each do ||
+
+    end
 
 
 end
