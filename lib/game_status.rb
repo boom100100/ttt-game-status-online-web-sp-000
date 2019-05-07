@@ -50,6 +50,7 @@ def won?(board)
       break
     end
   end
+end
 
     return confirmedWin
 
