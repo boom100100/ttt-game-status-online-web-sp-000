@@ -53,10 +53,10 @@ def won?(board)
     end
 
     if confirmedWin == true
-      break
+      return winningRow
     end
   end
 
-    return confirmedWin
+    return false
 
 end
