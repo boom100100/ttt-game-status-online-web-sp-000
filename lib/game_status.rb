@@ -57,6 +57,6 @@ def won?(board)
     end
   end
 
-    return false
+    return confirmedWin
 
 end
