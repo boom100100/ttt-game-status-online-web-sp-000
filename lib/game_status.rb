@@ -69,6 +69,10 @@ def draw?(board)
 
 end
 
+def over?(board)
+
+end
+
 def won?(board)
 
   confirmedWin = false
