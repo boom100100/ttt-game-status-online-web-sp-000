@@ -57,6 +57,18 @@ def won?(board)
 
   end
 
+  if full?(board, howManyMoves)
+    return true
+  end
+
     return confirmedWin
+
+end
+
+def full?(board, movesMade)
+  if movesMade == 9
+    return true
+  else
+    return false
 
 end
