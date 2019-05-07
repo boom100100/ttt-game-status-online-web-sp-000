@@ -79,7 +79,7 @@ def over?(board)
   elsif won?
     return true
   end
-  
+
 end
 
 def won?(board)
