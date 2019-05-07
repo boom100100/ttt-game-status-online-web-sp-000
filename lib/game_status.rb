@@ -24,20 +24,28 @@ def won?(board)
   howManyMoves = 0
 
   board.each do |space|
+
     if space != "" || space != " " || space != nil
       howManyMoves += 1
     end
+
   end
 
   if howManyMoves == 0
     return false
+
   else
     WIN_COMBINATIONS.each do |combo|
 
       confirmedWin = combo.all? do |index|
         board[index] == "X"
-      end || combo.all? do |index|
-        board[index] == "O"
+      end
+      if confirmedWin
+        return true
+      else
+        confirmedWin = combo.all? do |index|
+          board[index] == "O"
+        end
       end
     end
   end
