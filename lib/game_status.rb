@@ -33,6 +33,7 @@ def howManyMoves(board)
 
 end
 
+
 def full?(board)
 
   movesMade = howManyMoves(board)
@@ -44,6 +45,7 @@ def full?(board)
   end
 
 end
+
 
 def draw?(board)
 
@@ -69,6 +71,7 @@ def draw?(board)
 
 end
 
+
 def over?(board)
   if draw?(board)
     return true
@@ -83,8 +86,9 @@ def over?(board)
   else
     return false
   end
-  
+
 end
+
 
 def won?(board)
 
