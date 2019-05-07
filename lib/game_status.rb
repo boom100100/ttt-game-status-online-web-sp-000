@@ -48,8 +48,7 @@ def won?(board)
     space2 == "O"
     if confirmedWin == true
       break
-    end
-  end
+    
 end
 
     return confirmedWin
