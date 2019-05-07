@@ -70,6 +70,7 @@ def won?(board)
 end
 
 def full?(board)
+
   movesMade = howManyMoves(board)
 
   if movesMade == 9
