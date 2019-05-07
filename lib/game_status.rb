@@ -38,12 +38,14 @@ def won?(board)
   end
 
   WIN_COMBINATIONS.each do |array|
+    winningRow = []
     confirmedWin = board.all? do |space2|
       space2 == "X"
+      winningRow.push(board.index(space2))
     end
 
     if confirmedWin == true
-      break
+      return winningRow
     end
 
     confirmedWin = board.all? do |space2|
