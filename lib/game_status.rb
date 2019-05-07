@@ -57,7 +57,7 @@ def won?(board)
 
   end
 
-  confirmedWin == full?(board, howManyMoves)
+  confirmedWin == full?(board, howManyMoves) #true for draw
 
   return confirmedWin
 
