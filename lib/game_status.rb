@@ -34,14 +34,14 @@ def won?(board)
   end
 
   WIN_COMBINATIONS.each do |combos|
-    
+
     confirmedWin = combo.all? do |index|
       board[index] == "X"
     end || combo.all? do |index|
       board[index] == "O"
     end
-    
+
   end
-  
+
 
 end
