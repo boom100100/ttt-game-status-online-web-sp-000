@@ -37,11 +37,10 @@ def won?(board)
 
   confirmedWin = false
 
+  howMany = howManyMoves(board)
 
-
-  if howManyMoves == 0 #game not over at 0 moves
+  if howMany == 0 #game not over at 0 moves
     return confirmedWin
-
   end
 
   WIN_COMBINATIONS.each do |array|
@@ -71,6 +70,7 @@ def won?(board)
 end
 
 def full?(board)
+  movesMade = howManyMoves(board)
 
   if movesMade == 9
     return true
