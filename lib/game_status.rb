@@ -27,6 +27,10 @@ def won?(board)
       howManyMoves += 1
     end
   end
-  if howManyMoves > 0
+
+  if howManyMoves == 0
     return false
+  end
+
+
 end
