@@ -76,10 +76,9 @@ def over?(board)
     return true
   elsif won?(board)
     return true
-  else
-    return false
   end
 
+  return false
 end
 
 def won?(board)
