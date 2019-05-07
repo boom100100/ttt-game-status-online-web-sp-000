@@ -34,25 +34,11 @@ def won?(board)
 
   if howManyMoves == 0
     return confirmedWin
-
-  else
-
-=begin
-    WIN_COMBINATIONS.each do |combo|
-
-      confirmedWin = combo.all? do |index|
-        board[index] == "X"
-      end
-      if confirmedWin
-        return true
-      else
-        confirmedWin = combo.all? do |index|
-          board[index] == "O"
-        end
-      end
-    end
-=end
+    
   end
+
+
+    WIN_COMBINATIONS
 
 
 end
