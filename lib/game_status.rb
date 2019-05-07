@@ -26,7 +26,7 @@ def won?(board)
 
   board.each do |space|
 
-    if space != "" || space != " " || space != nil
+    if space == "X" || space == "O"
       howManyMoves += 1
     end
 
