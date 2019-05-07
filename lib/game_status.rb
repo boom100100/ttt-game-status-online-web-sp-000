@@ -18,19 +18,26 @@ WIN_COMBINATIONS = [
   [2,4,6], #top right bottol left diagonal
 ]
 
-
-
-def won?(board)
-  howManyMoves = 0
-  confirmedWin = false
+def howManyMoves(board)
+  howMany = 0
 
   board.each do |space|
 
     if space == "X" || space == "O"
-      howManyMoves += 1
+      howMany += 1
     end
 
   end
+
+  return howMany
+
+end
+
+def won?(board)
+
+  confirmedWin = false
+
+
 
   if howManyMoves == 0 #game not over at 0 moves
     return confirmedWin
@@ -57,13 +64,13 @@ def won?(board)
 
   end
 
-  confirmedWin == full?(board, howManyMoves) #true for draw
+  confirmedWin == full?(board) #true for draw
 
   return confirmedWin
 
 end
 
-def full?(board, movesMade)
+def full?(board)
 
   if movesMade == 9
     return true
