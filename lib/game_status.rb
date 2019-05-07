@@ -38,7 +38,7 @@ def won?(board)
   end
 
 
-    winComparison: WIN_COMBINATIONS.each do |array|
+    winComparison WIN_COMBINATIONS.each do |array|
       confirmedWin = board.all? |space2|
       space2 == "X"
       if confirmedWin == true
