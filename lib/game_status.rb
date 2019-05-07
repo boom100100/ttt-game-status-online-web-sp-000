@@ -73,10 +73,11 @@ end
 
 
 def over?(board)
+=begin
   if draw?(board)
     return true
   end
-
+=end
   if full?(board)
     return true
   end
@@ -86,7 +87,7 @@ def over?(board)
   end
 
   return false
-  
+
 
 end
 
