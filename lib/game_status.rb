@@ -22,6 +22,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   howManyMoves = 0
+  confirmedWin = false
 
   board.each do |space|
 
